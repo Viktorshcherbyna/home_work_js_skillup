@@ -10,12 +10,13 @@
 </head>
 
 <body>
-    <input id="text_area" type="text" autofocus />
-    <button id="btn-s" type="submit" value="add name"> add name </button>
-    <button id="btn-r" type="reset">Delete</button>
-    <div id="add_name" value="23">
-
+    <div id="container">
+        <label for="input_text">Пожалуйста, введите ваше имя</label>
+        <input required id="input_text" type="text" placeholder="Ваше имя" autofocus>
+        <button type="button" onclick="pushData(); clearInput();" value="submit">Добавить имя</button>
+        <button type="button" id="clear" onclick="clearBox(); clearInput();" value="reset">Очистить</button>
     </div>
+    <ul id="list"></ul>
 
 </body>
 
